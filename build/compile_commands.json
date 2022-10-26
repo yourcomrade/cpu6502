@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/file/cpu/build",
+  "command": "C:/w64devkit/bin/gcc.exe   -g -std=gnu99 -o CMakeFiles/cpu.dir/main.c.obj -c D:/file/cpu/main.c",
+  "file": "D:/file/cpu/main.c"
+}
+]

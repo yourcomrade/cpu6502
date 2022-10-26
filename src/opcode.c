@@ -11,5 +11,7 @@ opcode my_opcode[]={
         {"Or with accumulator",0x01,"ORA",pre_ind_X,ORA},
         {"Or with accumulator",0x05,"ORA",zp,ORA},
         {"Arithmetic shift left",0x06,"ASL",zp,ASL},
+        {"Push flag register",0x08,"PHP",none,PHP},
+        
 };
 #endif

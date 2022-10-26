@@ -25,7 +25,7 @@ void test(mem*my_mem){
 
    // delete(my_mem,0x3400);
     ///(my_mem,0x00a3);
-    delete(my_mem,0x0003);
+    //delete(my_mem,0x0003);
     printf("\npreorder: \n");
     preorder(my_mem->root);
     printf("\ninorder: \n");
