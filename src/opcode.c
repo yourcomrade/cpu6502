@@ -27,6 +27,16 @@ opcode my_opcode[]={
         {"Jump subroutine",0x20,"JSR",none,JSR},
         {"And with accumulator",0x21,"AND",pre_ind_X,AND},
         {"Test bit",0x24,"BIT",zp,BIT},
-        {}
+        {"And with accumulator",0x25,"AND",zp,AND},
+        {"Rotate left",0x26,"ROL",zp,ROL},
+        {"Pull status register from stack",0x28,"PLP",none,PLP},
+        {"And with accumulator",0x29,"AND",imm,AND},
+        {"Rotate left",0x2a,"ROL",acc,ROL},
+        {"Test bit",0x2c,"BIT",adr,BIT},
+        {"And with accumulator",0x2d,"AND",adr,AND},
+        {"Rotate left",0x2e,"ROL",adr,ROL},
+        {"Branch on minus",0x30,"BMI",none,BMI},
+        {"And with accumulator",0x31,"AND",pos_ind_Y,AND},
+
 };
 #endif
