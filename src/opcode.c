@@ -37,6 +37,12 @@ opcode my_opcode[]={
         {"Rotate left",0x2e,"ROL",adr,ROL},
         {"Branch on minus",0x30,"BMI",none,BMI},
         {"And with accumulator",0x31,"AND",pos_ind_Y,AND},
+        {"And with accumulator",0x35,"AND",zp_X,AND},
+        {"Rotate left",0x36,"ROL",zp_X,ROL},
+        {"Set carry flag",0x38,"SEC",none,SEC},
+        {"And with accumulator",0x39,"AND",adr_Y,AND},
+        {"And with accumulator",0x3d,"AND",adr_X,AND},
+        {"Rotate left",0x3e,"ROL",adr_X,ROL},
 
 };
 #endif
