@@ -53,6 +53,26 @@ opcode my_opcode[]={
         {"Jump",0x4c,"JMP",adr,JMP},
         {"Exclusive or",0x4d,"EOR",adr,EOR},
         {"Logical shift right",0x4e,"LSR",adr,LSR},
+        {"Branch on overflow clear",0x50,"BVC",none,BVC},
+        {"Exclusive or",0x51,"EOR",pos_ind_Y,EOR},
+        {"Exclusive or",0x55,"EOR",zp_X,EOR},
+        {"Logical shift right",0x56,"LSR",zp_X,LSR},
+        {"Clear interrupt disable",0x58,"CLI",none,CLI},
+        {"Exclusive or",0x59,"EOR",adr_Y,EOR},
+        {"Exclusive or",0x5d,"EOR",adr_X,EOR},
+        {"Logical shift right",0x5e,"LSR",adr_X,LSR},
+        {"Return from subroutine",0x60,"RTS",none,RTS},
+        {"Add with carry",0x61,"ADC",pre_ind_X,ADC},
+        {"Add with carry",0x65,"ADC",zp,ADC},
+        {"Rotate right",0x66,"ROR",zp,ROR},
+        {"Pull accumulator from stack",0x68,"PLA",none,PLA},
+        {"Add with carry",0x69,"ADC",imm,ADC},
+        {"Rotate right",0x6a,"ROR",acc,ROR},
+        {"Jump indirect",0x6c,"JMP",ind_adr,JMP},
+        {"Add with carry",0x6d,"ADC",adr,ADC},
+        {"Rotate right",0x6e,"ROR",adr,ROR},
+        {"Branch on overflow set",0x70,"BVS",none,BVS},
+        
 
 };
 #endif
