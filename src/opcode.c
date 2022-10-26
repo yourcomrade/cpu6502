@@ -16,6 +16,7 @@ opcode my_opcode[]={
         {"Arithmetic shift left",0x0a,"ASL",zp,ASL},
         {"Or with accumulator",0x0d,"ORA",adr,ORA},
         {"Arithmetic shift left",0x0e,"ASL",adr,ASL},
-        {"Branch on plus",0x10,"BPL",none,BPL}
+        {"Branch on plus",0x10,"BPL",none,BPL},
+        {"Or with accumulator",0x11,"ORA",pos_ind_Y,ORA},
 };
 #endif
