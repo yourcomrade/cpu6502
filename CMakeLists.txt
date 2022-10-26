@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.22)
+project(cpu C)
+
+set(CMAKE_C_STANDARD 99)
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-omit-frame-pointer -fsanitize=address")
+set (CMAKE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS} -fno-omit-frame-pointer -fsanitize=address")
+file(GLOB INC inc/*.h)
+file(GLOB TST test/*.h)
+file(GLOB SRC_F srcc/*.c)
+add_executable(cpu main.c ${INC} ${TST} ${SRC_F} )
+
