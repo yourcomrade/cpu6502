@@ -9,5 +9,6 @@
 opcode my_opcode[]={
         {"Break",0x00,"BRK",none,BRK},
         {"Or with accumulator",0x01,"ORA",pre_ind_X,ORA},
+        {"Or with accumulator",0x05,"ORA",zp,ORA},
 };
 #endif
