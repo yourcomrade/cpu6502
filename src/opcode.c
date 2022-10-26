@@ -72,6 +72,23 @@ opcode my_opcode[]={
         {"Add with carry",0x6d,"ADC",adr,ADC},
         {"Rotate right",0x6e,"ROR",adr,ROR},
         {"Branch on overflow set",0x70,"BVS",none,BVS},
+        {"Add with carry",0x71,"ADC",pos_ind_Y,ADC},
+        {"Add with carry",0x75,"ADC",zp_X,ADC},
+        {"Rotate right",0x76,"ROR",zp_X,ROR},
+        {"Set interrupt disable",0x78,"SEI",none,SEI},
+        {"Add with carry",0x79,"ADC",adr_Y,ADC},
+        {"Add with carry",0x7d,"ADC",adr_X,ADC},
+        {"Rotate right",0x7e,"ROR",adr_X,ROR},
+        {"Store accumulator",0x81,"STA",pre_ind_X,STA},
+        {"Store Y register",0x84,"STY",zp,STY},
+        {"Store accumulator",0x85,"STA",zp,STA},
+        {"Store X register",0x86,"STX",zp,STX},
+        {"Decrement Y",0x88,"DEY",none,DEY},
+        {"Transfer X to accumulator",0x8a,"TXA",none,TXA},
+        {"Store Y register",0x8c,"STY",adr,STY},
+        {"Store accumulator",0x8d,"STA",adr,STA},
+        {"Store X register",0x8e,"STX",adr,STX},
+
         
 
 };
