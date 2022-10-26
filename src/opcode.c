@@ -14,5 +14,6 @@ opcode my_opcode[]={
         {"Push flag register",0x08,"PHP",none,PHP},
         {"Or with accumulator",0x09,"ORA",imm,ORA},
         {"Arithmetic shift left",0x0a,"ASL",zp,ASL},
+        {"Or with accumulator",0x0d,"ORA",adr,ORA},
 };
 #endif
