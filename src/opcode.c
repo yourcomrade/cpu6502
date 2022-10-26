@@ -43,6 +43,16 @@ opcode my_opcode[]={
         {"And with accumulator",0x39,"AND",adr_Y,AND},
         {"And with accumulator",0x3d,"AND",adr_X,AND},
         {"Rotate left",0x3e,"ROL",adr_X,ROL},
+        {"Return from interrupt",0x40,"RTI",none,RTI},
+        {"Exclusive or",0x41,"EOR",pre_ind_X,EOR},
+        {"Exclusive or",0x45,"EOR",zp,EOR},
+        {"Logical shift right",0x46,"LSR",zp,LSR},
+        {"Push accumulator to stack",0x48,"PHA",none,PHA},
+        {"Exclusive or",0x49,"EOR",imm,EOR},
+        {"Logical shift right",0x4a,"LSR",acc,LSR},
+        {"Jump",0x4c,"JMP",adr,JMP},
+        {"Exclusive or",0x4d,"EOR",adr,EOR},
+        {"Logical shift right",0x4e,"LSR",adr,LSR},
 
 };
 #endif
