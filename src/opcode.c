@@ -97,8 +97,22 @@ opcode my_opcode[]={
         {"Store accumulator",0x99,"STA",adr_Y,STA},
         {"Transfer X to stack",0x9a,"TXS",none,TXS},
         {"Store accumulator",0x9d,"STA",adr_X,STA},
-        
-
+        {"Load into Y register",0xa0,"LDY",imm,LDY},
+        {"Load into accumulator",0xa1,"LDA",pre_ind_X,LDA},
+        {"Load into X register",0xa2,"LDX",imm,LDX},
+        {"Load into Y register",0xa4,"LDY",zp,LDY},
+        {"Load into accumulator",0xa5,"LDA",zp,LDA},
+        {"Load into X register",0xa6,"LDX",zp,LDX},
+        {"Transfer accumulator to Y",0xa8,"TAY",none,TAY},
+        {"Load into accumulator",0xa9,"LDA",imm,LDA},
+        {"Transfer accumulator to X",0xaa,"TAX",none,TAX},
+        {"Load into Y register",0xac,"LDY",adr,LDY},
+        {"Load into accumulator",0xad,"LDA",adr,LDA},
+        {"Load into X register",0xae,"LDX",adr,LDX},
+        {"Branch on carry set",0xb0,"BCS",none,BCS},
+        {"Load into accumulator",0xb1,"LDA",pos_ind_Y,LDA},
+        {"Load into Y register",0xb4,"LDY",zp_X,LDY},
+        {"Load into accumulator",0xb5,"LDA",zp_X,LDA},
 
 };
 #endif
