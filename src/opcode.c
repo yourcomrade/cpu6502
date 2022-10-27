@@ -150,7 +150,13 @@ opcode my_opcode[]={
         {"Compare with X",0xec,"CPX",adr,CPX},
         {"Subtract with carry",0xed,"SBC",adr,SBC},
         {"Increment memory",0xee,"INC",adr,INC},
-        {"Branch on equal",0xf0,"BEQ",none,BEQ}
-
+        {"Branch on equal",0xf0,"BEQ",none,BEQ},
+        {"Subtract with carry",0xf1,"SBC",pos_ind_Y,SBC},
+        {"Subtract with carry",0xf5,"SBC",zp_X,SBC},
+        {"Increment memory",0xf6,"INC",zp_X,INC},
+        {"Set decimal",0xf8,"SED",none,SED},
+        {"Subtract with carry",0xf9,"SBC",adr_Y,SBC},
+        {"Subtract with carry",0xfd,"SBC",adr_X,SBC},
+        {"Increment memory",0xfe,"INC",adr_X,INC},
 };
 #endif
