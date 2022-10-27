@@ -113,6 +113,27 @@ opcode my_opcode[]={
         {"Load into accumulator",0xb1,"LDA",pos_ind_Y,LDA},
         {"Load into Y register",0xb4,"LDY",zp_X,LDY},
         {"Load into accumulator",0xb5,"LDA",zp_X,LDA},
+        {"Load into X register",0xb6,"LDX",zp_Y,LDX},
+        {"Clear overflow flag",0xb8,"CLV",none,CLV},
+        {"Load into accumulator",0xb9,"LDA",adr_Y,LDA},
+        {"Transfer from stack to X",0xba,"TSX",none,TSX},
+        {"Load into Y register",0xbc,"LDY",adr_X,LDY},
+        {"Load into accumulator",0xbd,"LDA",adr_X,LDA},
+        {"Load into Y register",0xbe,"LDX",adr_Y,LDX},
+        {"Compare with Y",0xc0,"CPY",imm,CPY},
+        {"Compare with accumulator",0xc1,"CMP",pre_ind_X,CMP},
+        {"Compare with Y",0xc4,"CPY",zp,CPY},
+        {"Compare with accumulator",0xc5,"CMP",zp,CMP},
+        {"Decrement",0xc6,"DEC",zp,DEC},
+        {"Increment Y register",0xc8,"INY",none,INY},
+        {"Compare with accumulator",0xc9,"CMP",imm,CMP},
+        {"Decrement X register",0xca,"DEX",none,DEX},
+        {"Compare with Y",0xcc,"CPY",adr,CPY},
+        {"Compare with accumulator",0xcd,"CMP",adr,CMP},
+        {"Decrement",0xce,"DEC",adr,DEC},
+        {"Branch on Not Equal",0xd0,"BNE",none,BNE},
+        {"Compare with accumulator",0xcd,"CMP",adr,CMP},
+
 
 };
 #endif
