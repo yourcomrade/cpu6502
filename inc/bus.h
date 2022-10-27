@@ -11,7 +11,7 @@ typedef struct bus{
     cpu*my6502;
     mem*my_ram;
 }bus;
-uint8_t fetch(bus*my_bus);
-void write(bus*my_bus,uint16_t addr,uint8_t data,char read);
+extern uint8_t fetch(bus*my_bus);
+extern void write(bus*my_bus,uint16_t addr,uint8_t data,char read);
 
 #endif

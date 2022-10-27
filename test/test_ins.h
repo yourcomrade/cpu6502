@@ -5,11 +5,11 @@
 #ifndef CPU_TEST_INS_H
 #define CPU_TEST_INS_H
 #include "../inc/bus.h"
-#include "../src/bus.c"
+
 #include "../inc/memory.h"
-#include "../src/memory.c"
+
 #include "../inc/instruction.h"
-#include "../src/instruction.c"
+
 #include <stdio.h>
 void init(mem*my_mem,cpu*my_cpu,bus*my_bus){
     reset(my_cpu);

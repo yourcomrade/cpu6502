@@ -1,0 +1,6 @@
+Address   Hexdump   Assembly
+0   a9 30   LDA #$30
+2   85 1   STA $1
+4   a2 40   LDX #$40
+6   a0 28   LDY #$28
+8   4c 0 0  JMP $00

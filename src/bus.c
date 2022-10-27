@@ -4,8 +4,8 @@
 #ifndef BUS_C
 #define BUS_C
 #include "../inc/bus.h"
+
 #include "../inc/memory.h"
-#include "../src/memory.c"
 
 uint8_t fetch(bus*my_bus){
     my_bus->read=1;///Now we read data from bus

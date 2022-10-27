@@ -4,7 +4,7 @@
 #ifndef OPCODE_C
 #define OPCODE_C
 #include "../inc/instruction.h"
-#include "../inc/opcode.h"
+
 
 const opcode my_opcode[]={
         {"Break",0x00,"BRK",none,BRK},

@@ -27,4 +27,5 @@ typedef struct opcode{
     mode cpu_mode;
     int(*op_code)(cpu*,bus*,mode);
 }opcode;
+extern const opcode my_opcode[];
 #endif

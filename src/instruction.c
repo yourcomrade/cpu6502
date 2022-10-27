@@ -594,6 +594,7 @@ int BIT(cpu*my6502,bus*my_bus,mode cpu_mode){
                 break;
         }
     }
+    return 0;
 }
 /// @brief Break instruction: mostly to create software interrupt
 /// @param my6502 
@@ -2295,7 +2296,7 @@ int PHA(cpu*my6502,bus*my_bus,mode cpu_mode){
     write(my_bus,my6502->sp,my6502->reg_A,0);//Push data to stack
     my6502->pc++;
     my6502->clock+=3;
-
+    return 0;
 }
 /// @brief Push register status to the stack
 /// @param my6502 
@@ -2307,6 +2308,7 @@ int PHP(cpu*my6502,bus*my_bus,mode cpu_mode){
     write(my_bus,my6502->sp,my6502->reg_sta,0);//Push data to stack
     my6502->pc++;
     my6502->clock+=3;
+    return 0;
 }
 /// @brief Push register X to the stack
 /// @param my6502 
@@ -2318,6 +2320,7 @@ int PHX(cpu*my6502,bus*my_bus,mode cpu_mode){
     write(my_bus,my6502->sp,my6502->reg_X,0);//Push data to stack
     my6502->pc++;
     my6502->clock+=3;
+    return 0;
 }
 /// @brief Push register Y to the stack
 /// @param my6502 
@@ -2329,6 +2332,7 @@ int PHY(cpu*my6502,bus*my_bus,mode cpu_mode){
     write(my_bus,my6502->sp,my6502->reg_Y,0);//Push data to stack
     my6502->pc++;
     my6502->clock+=3;
+    return 0;
 }
 /// @brief Pull data from stack to accumulator
 /// @param my6502 
@@ -2341,6 +2345,7 @@ int PLA(cpu*my6502,bus*my_bus,mode cpu_mode){
     my6502->pc++;
     my6502->clock+=4;
     my6502->sp++;
+    return 0;
 }
 /// @brief Pull data from stack to register status
 /// @param my6502 
@@ -2353,6 +2358,7 @@ int PLP(cpu*my6502,bus*my_bus,mode cpu_mode){
     my6502->pc++;
     my6502->clock+=4;
     my6502->sp++;
+    return 0;
 }
 /// @brief Pull data from stack to register X
 /// @param my6502 
@@ -2365,6 +2371,7 @@ int PLX(cpu*my6502,bus*my_bus,mode cpu_mode){
     my6502->pc++;
     my6502->clock+=4;
     my6502->sp++;
+    return 0;
 }
 /// @brief Pull data from stack to register Y
 /// @param my6502 
@@ -2377,6 +2384,7 @@ int PLY(cpu*my6502,bus*my_bus,mode cpu_mode){
     my6502->pc++;
     my6502->clock+=4;
     my6502->sp++;
+    return 0;
 }
 /// @brief Rotation left 1 bit
 /// @param my6502 
@@ -2828,6 +2836,7 @@ int SEC(cpu*my6502,bus*my_bus,mode cpu_mode){
 /// @return 
 int SED(cpu*my6502,bus*my_bus,mode cpu_mode){
     set_D_flag(my6502);
+    return 0;
 }
 /// @brief set interupt flag or disable interrupt
 /// @param my6502 
@@ -2836,6 +2845,7 @@ int SED(cpu*my6502,bus*my_bus,mode cpu_mode){
 /// @return 
 int SEI(cpu*my6502,bus*my_bus,mode cpu_mode){
     set_I_flag(my6502);
+    return 0;
 }
 /// @brief Store the content of Accumulator into memory address
 /// @param my6502 
