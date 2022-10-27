@@ -6,6 +6,6 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-omit-frame-pointer -fsanitize=addr
 set (CMAKE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS} -fno-omit-frame-pointer -fsanitize=address")
 file(GLOB INC inc/*.h)
 file(GLOB TST test/*.h)
-file(GLOB SRC_F srcc/*.c)
+file(GLOB SRC_F src/*.c)
 add_executable(cpu main.c ${INC} ${TST} ${SRC_F} )
 

@@ -3,6 +3,7 @@
 #include<stdint.h>
 #include "cpu6502.h"
 #include "bus.h"
+#define num_opcode 151
 typedef enum mode{
     none,//Do nothing
     adr, //Absolute address mode
