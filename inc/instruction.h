@@ -20,6 +20,7 @@ int BVS(cpu*my6502,bus*my_bus,mode cpu_mode);
 int BCC(cpu*my6502,bus*my_bus,mode cpu_mode);
 int BCS(cpu*my6502,bus*my_bus,mode cpu_mode);
 int BNE(cpu*my6502,bus*my_bus,mode cpu_mode);
+int BEQ(cpu*my6502,bus*my_bus,mode cpu_mode);
 int CLC(cpu*my6502,bus*my_bus,mode cpu_mode);
 int CLI(cpu*my6502,bus*my_bus,mode cpu_mode);
 int CLD(cpu*my6502,bus*my_bus,mode cpu_mode);

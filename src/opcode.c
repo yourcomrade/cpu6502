@@ -132,8 +132,25 @@ opcode my_opcode[]={
         {"Compare with accumulator",0xcd,"CMP",adr,CMP},
         {"Decrement",0xce,"DEC",adr,DEC},
         {"Branch on Not Equal",0xd0,"BNE",none,BNE},
-        {"Compare with accumulator",0xcd,"CMP",adr,CMP},
-
+        {"Compare with accumulator",0xd1,"CMP",pos_ind_Y,CMP},
+        {"Compare with accumulator",0xd5,"CMP",zp_X,CMP},
+        {"Decrement",0xd6,"DEC",zp_X,DEC},
+        {"Clear decimal",0xd8,"CLD",none,CLD},
+        {"Compare with accumulator",0xd9,"CMP",adr_Y,CMP},
+        {"Compare with accumulator",0xdd,"CMP",adr_X,CMP},
+        {"Decrement",0xde,"DEC",adr_X,DEC},
+        {"Compare with X",0xe0,"CPX",imm,CPX},
+        {"Subtract with carry",0xe1,"SBC",pre_ind_X,SBC},
+        {"Compare with X",0xe4,"CPX",zp,CPX},
+        {"Subtract with carry",0xe5,"SBC",zp,SBC},
+        {"Increment memory",0xe6,"INC",zp,INC},
+        {"Increment X register",0xe8,"INX",none,INX},
+        {"Subtract with carry",0xe9,"SBC",imm,SBC},
+        {"No operation",0xea,"NOP",none,NOP},
+        {"Compare with X",0xec,"CPX",adr,CPX},
+        {"Subtract with carry",0xed,"SBC",adr,SBC},
+        {"Increment memory",0xee,"INC",adr,INC},
+        {"Branch on equal",0xf0,"BEQ",none,BEQ}
 
 };
 #endif
