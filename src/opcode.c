@@ -88,8 +88,17 @@ opcode my_opcode[]={
         {"Store Y register",0x8c,"STY",adr,STY},
         {"Store accumulator",0x8d,"STA",adr,STA},
         {"Store X register",0x8e,"STX",adr,STX},
-
+        {"Branch on carry clear",0x90,"BCC",none,BCC},
+        {"Store accumulator",0x91,"STA",pos_ind_Y,STA},
+        {"Store Y register",0x94,"STY",zp_X,STY},
+        {"Store accumulator",0x95,"STA",zp_X,STA},
+        {"Store X register",0x96,"STX",zp_Y,STX},
+        {"Transger Y to accumulator",0x98,"TYA",none,TYA},
+        {"Store accumulator",0x99,"STA",adr_Y,STA},
+        {"Transfer X to stack",0x9a,"TXS",none,TXS},
+        {"Store accumulator",0x9d,"STA",adr_X,STA},
         
+
 
 };
 #endif
