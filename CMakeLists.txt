@@ -8,4 +8,5 @@ file(GLOB INC inc/*.h)
 file(GLOB TST test/*.h)
 file(GLOB SRC_F src/*.c)
 add_executable(cpu main.c ${INC} ${TST} ${SRC_F} )
-
+target_compile_options(cpu PRIVATE -fno-omit-frame-pointer -fsanitize=address)
+target_link_options(cpu PRIVATE -fno-omit-frame-pointer -fsanitize=address)
