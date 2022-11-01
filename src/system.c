@@ -40,9 +40,7 @@ void disassembler(char*file_name)
         perror("\nCannot open text file for disassembler ");
     }
     unsigned char ins;
-    char addr_val=0;
 
-    opcode *prev=NULL;
     uint16_t address=0;
     fprintf(fptr2,"%s   %s   %s\n","Address","Hexdump","Assembly");
     while(fread(&ins, sizeof(char),1,fptr1)>0){

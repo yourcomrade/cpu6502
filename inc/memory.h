@@ -22,12 +22,12 @@ extern int getHeight(node*cur);
 extern node*left_rotate(node*cur);
 extern node*right_rotate(node*cur);
 extern int getBalance(node*cur);
-extern void balance(node*cur);
+
 extern node*find(mem*my_mem,uint16_t addr);
 extern node* insert_node(node*cur,uint16_t addr, uint8_t val);
 extern void insert(mem*,uint16_t,uint8_t);
 extern node* del_node(node*cur,uint16_t addr);
-extern void delete(mem*my_mem,uint16_t addr);
+
 extern void preorder(node*root);
 extern void inorder(node*root);
 extern void postorder(node*root);
